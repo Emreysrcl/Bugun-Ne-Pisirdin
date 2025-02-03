@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/logreg.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Bugün Ne Pişirdin ?</title>
+</head>
+<body>
+    <h1>Kayıt Ol</h1>
+
+    <form action="/register" method="post" enctype="multipart/form-data">
+        <input type="text" name="username" id="username" placeholder="Kullanıcı Adı" required>
+        <input type="password" name="password" id="password" placeholder="Şifre" required>
+        <input type="text" name="name" id="name" placeholder="Ad" required>
+        <input type="text" name="surname" id="surname" placeholder="Soyad" required>
+        <input type="number" name="age" id="age" placeholder="Yaş" required>
+        <input type="tel" name="tel" id="tel" placeholder="Telefon numarası" required>
+        <label for="profilimg" class="file-upload-label">Profil Fotoğrafı Seç</label>
+     
+        <input type="file" id="profilimg" name="profilimg" accept="image/*">
+
+        <button type="submit">Kayıt Ol</button>
+    </form>
+</body>
+</html>

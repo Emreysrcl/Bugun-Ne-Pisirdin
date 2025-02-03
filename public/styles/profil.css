@@ -1,0 +1,205 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(247, 231, 205);
+}
+
+.profile-container {
+    display: flex;
+    align-items: flex-start; /* Yazıları üst hizalamak için */
+    gap: 10%; /* Fotoğraf ve yazılar arasındaki boşluk */
+    margin-top: 50px;
+    background-color: #F7F3E9; /* Arka plan rengi */
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+}
+
+.profile-image {
+    width: 25%;
+    height: auto; /* Oranını korumak için */
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-details {
+    flex-grow: 1;
+}
+
+.profile-details p {
+    margin: 10px 0; /* Daha fazla dikey boşluk */
+    margin-top: 25px;
+    font-size: 1.3rem;
+    color: #333; /* Yazı rengi */
+}
+
+.profile-details strong {
+    color: #F48B57; /* Öne çıkan yazı rengi */
+}
+
+.edit-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: rgb(248, 171, 143);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+
+}
+
+
+.edit-button:hover {
+    background-color: #E5713E; /* Hover rengi */
+}
+
+/* Düzenleme formu stilleri */
+#editForm {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+#editForm label {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #555; /* Label rengi */
+}
+
+#editForm .form-control {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+#editForm .form-control:focus {
+    outline: none;
+    border-color: #F48B57;
+    box-shadow: 0 0 4px rgba(244, 139, 87, 0.5); /* Odak efekti */
+}
+
+#editForm button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#editForm .btn-success {
+    background-color: #4CAF50; /* Kaydet buton rengi */
+    color: white;
+    border: none;
+}
+
+#editForm .btn-success:hover {
+    background-color: #45A149; /* Hover efekti */
+}
+
+#editForm .btn-secondary {
+    background-color: #6C757D; /* İptal buton rengi */
+    color: white;
+    border: none;
+}
+
+#editForm .btn-secondary:hover {
+    background-color: #5A636E; /* Hover efekti */
+}
+
+/* Gönderiler için düğme stilleri */
+#posts button {
+    background-color: rgb(248, 171, 143);
+    color: white;
+    border-radius: 8px;
+    padding: 5px 15px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+#posts button:hover {
+    background-color: #E5713E;
+}
+.custom-hr {
+    border: 0;
+    border-top: 2px solid rgb(248, 171, 143); /* Çizginin rengi ve kalınlığı */
+    margin-top: 20px; /* Başlık ile çizgi arasındaki mesafe */
+    margin-bottom: 20px; /* Çizgi ile sonraki içerik arasındaki mesafe */
+}
+    
+/* Genel Buton Stili */
+button {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Düzenle Butonu */
+.edit-button {
+    background-color: rgb(248, 171, 143);
+    color: white;
+}
+
+.edit-button:hover {
+    background-color: #E5713E;
+    transform: scale(1.05);
+}
+
+/* Kaydet Butonu */
+.btn-success {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #45A149;
+    transform: scale(1.05);
+}
+
+/* İptal Butonu */
+.btn-secondary {
+    background-color: #6C757D;
+    color: white;
+    border: none;
+}
+
+.btn-secondary:hover {
+    background-color: #5A636E;
+    transform: scale(1.05);
+}
+
+/* Gönderi Butonları */
+#posts button {
+    background-color: rgb(248, 171, 143);
+    color: white;
+    border-radius: 8px;
+    padding: 5px 15px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#posts button:hover {
+    background-color: #E5713E;
+    transform: scale(1.05);
+}
+
+/* Silme Butonu */
+.btn-danger {
+    background-color: #D9534F;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #C9302C;
+    transform: scale(1.05);
+}
+
+/* Form Elemanları için Odak Efekti */
+.form-control:focus {
+    outline: none;
+    border-color: #F48B57;
+    box-shadow: 0 0 6px rgba(244, 139, 87, 0.5);
+}

@@ -1,0 +1,96 @@
+/* Genel ayarlar */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(247, 231, 205);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Başlık */
+h1 {
+    color: #ff7f50;
+    margin-bottom:3rem;
+    font-size: 5rem;
+}
+
+/* Form stilleri */
+/* Form stilleri */
+form {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 25%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Bu satır inputları ortalar */
+    gap: 15px;
+}
+
+/* Form elemanları */
+form input {
+    width: 85%; /* Genişlik sabit bırakıldı */
+    padding: 10px;
+    border: 1px solid #ddd;
+    
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Buton stilleri */
+form button {
+    background-color: #ff7f50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 85%;
+}
+
+
+form button:hover {
+    background-color: #e67349;
+}
+
+/* İkinci formun (Register) düzeni */
+.register-form {
+    margin-top: -10px; /* Login formuna yakınlaştırmak için */
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.file-upload-label {
+    display: inline-block;
+    background-color: #ff7f50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.file-upload-label:hover {
+    background-color: #e67349;
+}
+
+#file-chosen {
+    margin-left: 10px;
+    font-size: 14px;
+    color: #555;
+}

@@ -1,0 +1,84 @@
+
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/blog.css">
+    <link rel="stylesheet" href="/styles/main.css">
+    <title>Blog</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body><%- include('partials/header') %>
+    <main class="container my-5">
+        <div class="container mt-5" >
+       
+            <div class="jumbotron text-center p-5 bg-light rounded shadow" style=" background-color: #FBFBFB !important;">
+                <h1 class="display-4">Bugün Ne Pişirdin?</h1>
+                <p class="lead mt-3">Yemek tariflerini paylaş, başkalarını ilham ver!</p>
+                <hr class="my-4">
+                <a href="/newpost"  class="btn  btn-lg">İnsanlarla Paylaş</a>
+            </div>
+        </div>
+        <h1 class="text-center mb-2" style="font-size: 5rem; margin-top:8%; text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2); ">Gönderiler</h1>
+
+        <hr class="my-4 custom-hr"> <!-- Çizgiyi buraya ekliyoruz -->
+        
+        
+        <% blogpost.forEach(post => { %>  
+        <div class="blog-post d-flex flex-wrap mb-4 shadow-lg p-3 bg-light rounded">
+            
+            <!-- İçerik -->
+            <div class="blog-content flex-grow-1 me-4">
+                <h1 class="text-center text"><%= post.mealname %></h1>
+                <h5 class="text-muted mb-4 text-center"><%= post.mealtype %></h5>
+
+                <div class="accordion" id="accordion-<%= post.id %>">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne-<%= post.id %>">
+                            <button class="accordion-button" type="button" style="   background-color: FBF5E5 !important; /* Öncelik verir */"  data-bs-toggle="collapse" data-bs-target="#collapseOne-<%= post.id %>" aria-expanded="true" aria-controls="collapseOne-<%= post.id %>">
+                                Malzemeler
+                            </button>
+                        </h2>
+                        <div id="collapseOne-<%= post.id %>" class="accordion-collapse collapse" style="   background-color: FBFBFB !important; /* Öncelik verir */" aria-labelledby="headingOne-<%= post.id %>" data-bs-parent="#accordion-<%= post.id %>">
+                            <div class="accordion-body">
+                                <p><%= post.mealing %></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo-<%= post.id %>">
+                            <button class="accordion-button collapsed" type="button" style="   background-color: FBF5E5 !important; /* Öncelik verir */"  data-bs-toggle="collapse" data-bs-target="#collapseTwo-<%= post.id %>" aria-expanded="false" aria-controls="collapseTwo-<%= post.id %>">
+                                Tarif
+                            </button>
+                        </h2>
+                        <div id="collapseTwo-<%= post.id %>" style="   background-color: FBFBFB !important; /* Öncelik verir */"  class="accordion-collapse collapse" aria-labelledby="headingTwo-<%= post.id %>" data-bs-parent="#accordion-<%= post.id %>">
+                            <div class="accordion-body">
+                                <p><%= post.mealinst %></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="mt-4"><strong>Yemek Sırrı:</strong> <%= post.secret %></p>
+                
+            </div>
+            
+            <!-- Görsel -->
+            <div class="blog-image-wrapper">
+                <img src="/uploads/<%= post.mealimg %>" alt="<%= post.mealname %>" class="blog-image img-fluid rounded">
+                <p class="text-muted text-center small mt-2">
+                    <strong>Yazar:</strong> <%= post.mealwritter %> | <%= new Date(post.created_at).toLocaleString("tr-TR", { dateStyle: 'short', timeStyle: 'short' }) %>
+                </p>
+            </div>
+        </div>
+        <% }) %>
+    </main>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body> <%- include('partials/footer') %>
+</html>

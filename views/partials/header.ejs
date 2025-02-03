@@ -1,0 +1,56 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/anasayfa"><img src="/assets/android-chrome-192x192.png" style=" margin-left:10px; width: 60px; height:60px;" ></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/anasayfa"><img src="/assets/home.png"  style="  width: 30px; height:30px;"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/blog"><img src="/assets/publication.png" style="  width: 35px; height:35px;" ></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/profil"><img src="/assets/user.png" style="  width: 30px; height:30px;"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-danger" href="#" data-bs-toggle="modal" data-bs-target="#logoutModal">
+                        <img src="/assets/shares.png" style="width: 30px; height:30px;">
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+
+    <div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="logoutModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="logoutModalLabel" style="color:black;">Çıkış Yap</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" style="color:black;">
+              Çıkış yapmak istiyor musunuz?
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hayır</button>
+              <a href="/logout" class="btn btn-danger">Evet</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+</nav>
+<script>
+   
+        function confirmLogout(event) {
+            event.preventDefault(); 
+            if (confirm("Çıkış yapmak istiyor musunuz?")) {
+                window.location.href = "/logout"; 
+            }
+        }
+     
+</script>

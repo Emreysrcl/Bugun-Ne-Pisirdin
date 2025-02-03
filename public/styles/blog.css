@@ -1,0 +1,170 @@
+/* Genel Stil */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(247, 231, 205);
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    color: rgb(248, 171, 143);
+}
+
+main {
+    margin-top: 80px; /* Header boşluğu */
+    margin-bottom: 50px; /* Footer boşluğu */
+}
+
+/* Blog Post */
+.blog-post {
+    display: flex;
+    flex-wrap: wrap; /* Mobil uyumluluk için esnek yapı */
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 12px;
+    gap: 20px;
+    background-color: #FBFBFB; /* Açık renk arka plan */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-post:hover {
+    transform: scale(1.02); /* Hover efekti */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Hover gölge */
+}
+
+.blog-content {
+    flex: 1;
+    color: #333; /* Daha koyu yazı rengi */
+}
+
+.blog-content h1 {
+    font-size: 1.8rem;
+    color: rgb(248, 171, 143);
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.blog-content h5 {
+    font-size: 1.2rem;
+    color: #6c757d; /* Açık gri */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.blog-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.blog-content strong {
+    color: #F48B57; /* Vurgulanan yazılar için turuncu renk */
+}
+
+.accordion-button {
+    background-color: #FBF5E5 !important;
+    color:black;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+
+
+.accordion-body {
+    background-color: #FBFBFB !important;
+    color: #555;
+}
+
+/* Blog Görseli */
+.blog-image-wrapper {
+    text-align: center;
+}
+
+.blog-image {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.blog-image-wrapper p {
+    font-size: 0.9rem;
+    margin-top: 10px;
+    color: #6c757d; /* Açık gri renk */
+}
+
+.blog-image-wrapper p strong {
+    color: #333; /* Daha belirgin metin rengi */
+}
+
+/* Jumbotron */
+.jumbotron {
+    background-color: #FBFBFB !important;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.jumbotron h1 {
+    font-size: 2.5rem;
+    color: rgb(248, 171, 143);
+    margin-bottom: 20px;
+}
+
+.jumbotron p {
+    font-size: 1.2rem;
+    color: #6c757d;
+}
+
+.jumbotron .btn {
+    background-color: rgb(248, 171, 143);
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.jumbotron .btn:hover {
+    background-color: #E5713E;
+}
+
+/* Genel Düğme Stilleri */
+.btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-lg {
+    font-size: 1.2rem;
+}
+
+/* Mobil Uyumluluk */
+@media (max-width: 768px) {
+    .blog-post {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blog-image {
+        width: 100%;
+        height: auto;
+    }
+}
+/* Gönderiler başlığının altındaki çizgi */
+.custom-hr {
+    border: 0;
+    border-top: 2px solid rgb(248, 171, 143); /* Çizginin rengi ve kalınlığı */
+    margin-top: 20px; /* Başlık ile çizgi arasındaki mesafe */
+    margin-bottom: 20px; /* Çizgi ile sonraki içerik arasındaki mesafe */
+}
