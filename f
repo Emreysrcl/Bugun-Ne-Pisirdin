@@ -1,1 +1,0 @@
-postgresql://postgres:lrEkDqTGkpmbRrkFIQyMYlVgLvtcyzbt@monorail.proxy.rlwy.net:31046/railway
