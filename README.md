@@ -6,12 +6,12 @@
 <div>
 <table>
   <tr>
-    <td><img src="./public/preview/login.png" alt="Login Page" width="250"></td>
-    <td><img src="./public/preview/anasayfa.png" alt="Homepage" width="250"></td>
+    <td><img src="./public/preview/login.png" alt="Login Page" width="500"></td>
+    <td><img src="./public/preview/anasayfa.png" alt="Homepage" width="500"></td>
   </tr>
   <tr>
-    <td><img src="./public/preview/blog.png" alt="Blog Page" width="250"></td>
-    <td><img src="./public/preview/profil.png" alt="Profile Page" width="250"></td>
+    <td><img src="./public/preview/blog.png" alt="Blog Page" width="500"></td>
+    <td><img src="./public/preview/profil.png" alt="Profile Page" width="500"></td>
   </tr>
 </table>
 
