@@ -1,6 +1,6 @@
-# Bugun Ne Pisirdin
+<div align="center"> # Bugun Ne Pisirdin
 
-<div align="center">
+
 
 ## **What's on Your Menu Today?**
 
