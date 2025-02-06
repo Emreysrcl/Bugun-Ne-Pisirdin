@@ -2,7 +2,7 @@
 
 
 <div align="center"> 
-## **What's on Your Menu Today?**
+<h3 align="center">**What's on Your Menu Today?**</h3>
 
 ![Project Preview](./public/assets/preview.png)
 
