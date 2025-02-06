@@ -1,7 +1,7 @@
-<div align="center"> # Bugun Ne Pisirdin
+<h1 align="center">Bugun Ne Pisirdin</h1>
 
 
-
+<div align="center"> 
 ## **What's on Your Menu Today?**
 
 ![Project Preview](./public/assets/preview.png)
