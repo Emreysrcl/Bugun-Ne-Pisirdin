@@ -4,7 +4,7 @@
 <div align="center"> 
 <h3 align="center">**What's on Your Menu Today?**</h3>
 
-![Project Preview](./public/assets/preview.png)
+![Project Preview](./public/preview/login.png)
 
 [**Explore the Docs »**](https://github.com/Emreysrcl/Bugun-Ne-Pisirdin)
 
