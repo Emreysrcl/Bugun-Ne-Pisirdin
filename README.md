@@ -5,6 +5,7 @@
 <h3 align="center">**What's on Your Menu Today?**</h3>
 
 ![Project Preview](./public/preview/login.png)
+(./public/preview/anasayfa.png)
 
 [**Explore the Docs »**](https://github.com/Emreysrcl/Bugun-Ne-Pisirdin)
 
