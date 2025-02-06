@@ -4,11 +4,16 @@
 <div align="center"> 
 <h3 align="center">**What's on Your Menu Today?**</h3>
 <div>
-<img src="./public/preview/login.png">
- <img src="./public/preview/anasayfa.png">  
-    <img src="./public/preview/blog.png">  
-    <img src="./public/preview/profil.png">  
-</div>
+<table>
+  <tr>
+    <td><img src="./public/preview/login.png" alt="Login Page" width="250"></td>
+    <td><img src="./public/preview/anasayfa.png" alt="Homepage" width="250"></td>
+  </tr>
+  <tr>
+    <td><img src="./public/preview/blog.png" alt="Blog Page" width="250"></td>
+    <td><img src="./public/preview/profil.png" alt="Profile Page" width="250"></td>
+  </tr>
+</table>
 
 
 [**Explore the Docs »**](https://github.com/Emreysrcl/Bugun-Ne-Pisirdin)
