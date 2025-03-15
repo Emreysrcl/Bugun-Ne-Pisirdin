@@ -89,9 +89,9 @@ Ensure you have the following installed:
 
 ## **Usage**
 
- **Sign up/Login** – Create an account to start sharing your meals.
- **Post a Meal** – Upload a picture and write about what you cooked today.
- **Explore** – Browse through meals shared by other users.
+ - **Sign up/Login** – Create an account to start sharing your meals.
+ - **Post a Meal** – Upload a picture and write about what you cooked today.
+ - **Explore** – Browse through meals shared by other users.
 
 
 ---
