@@ -61,25 +61,25 @@ Ensure you have the following installed:
 
 ### **Installation**
 
-1. **Clone the repository:**
+ **Clone the repository:**
    ```sh
    git clone https://github.com/Emreysrcl/Bugun-Ne-Pisirdin.git
    ```
-2. **Navigate to the project directory:**
+ **Navigate to the project directory:**
    ```sh
    cd Bugun-Ne-Pisirdin
    ```
-3. **Install dependencies:**
+ **Install dependencies:**
    ```sh
    npm install
    ```
-4. **Set up the database:**
+ **Set up the database:**
    - Create a PostgreSQL database.
    - Run the provided SQL scripts in `queries.sql` to set up the necessary tables.
-5. **Configure environment variables:**
+ **Configure environment variables:**
    - Create a `.env` file in the root directory.
    - Add the required variables (e.g., database connection string, secret keys).
-6. **Start the server:**
+ **Start the server:**
    ```sh
    npm start
    ```
@@ -89,9 +89,9 @@ Ensure you have the following installed:
 
 ## **Usage**
 
-1. **Sign up/Login** – Create an account to start sharing your meals.
-2. **Post a Meal** – Upload a picture and write about what you cooked today.
-3. **Explore** – Browse through meals shared by other users.
+ **Sign up/Login** – Create an account to start sharing your meals.
+ **Post a Meal** – Upload a picture and write about what you cooked today.
+ **Explore** – Browse through meals shared by other users.
 
 
 ---
